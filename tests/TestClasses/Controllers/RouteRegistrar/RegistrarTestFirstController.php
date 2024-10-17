@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar;
 
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class RegistrarTestFirstController
 {

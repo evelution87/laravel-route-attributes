@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests;
+namespace Evelution87\RouteAttributes\Tests;
 
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;
 use Illuminate\Support\Arr;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\RouteAttributes\RouteRegistrar;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
+use Evelution87\RouteAttributes\RouteRegistrar;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
 
 class TestCase extends Orchestra
 {
@@ -22,7 +22,7 @@ class TestCase extends Orchestra
         $this->routeRegistrar = (new RouteRegistrar($router))
             ->useBasePath($this->getTestPath())
             ->useMiddleware([AnotherTestMiddleware::class])
-            ->useRootNamespace('Spatie\RouteAttributes\Tests\\');
+            ->useRootNamespace('Evelution87\RouteAttributes\Tests\\');
     }
 
     public function getTestPath(string $directory = null): string

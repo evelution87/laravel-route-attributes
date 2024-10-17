@@ -2,7 +2,7 @@
 
 namespace ThirdParty\Http\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class ThirdPartyController
 {

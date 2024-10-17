@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping1TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping2TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping3TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping4TestController;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping1TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping2TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping3TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\BindingScoping4TestController;
 
 class ScopeBindingsAttributeTest extends TestCase
 {

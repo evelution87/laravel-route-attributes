@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource;
 
-use Spatie\RouteAttributes\Attributes\Middleware;
-use Spatie\RouteAttributes\Attributes\Resource;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
+use Evelution87\RouteAttributes\Attributes\Middleware;
+use Evelution87\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
 
 #[Middleware([TestMiddleware::class, OtherTestMiddleware::class])]
 #[Resource('posts', only: ['index', 'show'])]

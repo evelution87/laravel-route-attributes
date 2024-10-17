@@ -1,23 +1,23 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ApiResource1TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ApiResource2TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestDomainController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestExceptController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestFullController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestMiddlewareController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestNamesArrayController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestNamesStringController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestOnlyController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestParametersController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestPrefixController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestShallowController;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ApiResource1TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ApiResource2TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestDomainController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestExceptController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestFullController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestMiddlewareController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestNamesArrayController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestNamesStringController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestOnlyController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestParametersController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestPrefixController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource\ResourceTestShallowController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
 
 class ResourceAttributeTest extends TestCase
 {

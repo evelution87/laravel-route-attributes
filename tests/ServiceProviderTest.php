@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests;
+namespace Evelution87\RouteAttributes\Tests;
 
-use Spatie\RouteAttributes\RouteAttributesServiceProvider;
-use Spatie\RouteAttributes\RouteRegistrar;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Grouped\GroupTestController;
+use Evelution87\RouteAttributes\RouteAttributesServiceProvider;
+use Evelution87\RouteAttributes\RouteRegistrar;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Grouped\GroupTestController;
 
 class ServiceProviderTest extends TestCase
 {
@@ -37,7 +37,7 @@ class ServiceProviderTest extends TestCase
             __DIR__ . '/TestClasses/Controllers/Grouped' => [
                 'prefix' => 'grouped',
                 'middleware' => 'api',
-                'namespace' => 'Spatie\RouteAttributes\Tests\TestClasses\Controllers\Grouped',
+                'namespace' => 'Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Grouped',
             ],
         ]);
     }

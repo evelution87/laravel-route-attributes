@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\PatchMultipleTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\PatchTestController;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\PatchMultipleTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\PatchTestController;
 
 class PatchAttributeTest extends TestCase
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Domain1TestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\Domain2TestController;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Domain1TestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Domain2TestController;
 
 class Domain1AttributeTest extends TestCase
 {

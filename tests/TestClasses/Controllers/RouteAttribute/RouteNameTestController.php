@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute;
 
-use Spatie\RouteAttributes\Attributes\Route;
+use Evelution87\RouteAttributes\Attributes\Route;
 
 class RouteNameTestController
 {

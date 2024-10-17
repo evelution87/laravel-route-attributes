@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteAttributes;
+namespace Evelution87\RouteAttributes;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;

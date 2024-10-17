@@ -8,7 +8,7 @@
 This package provides attributes to automatically register routes. Here's a quick example:
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class MyController
 {
@@ -47,7 +47,7 @@ composer require spatie/laravel-route-attributes
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\RouteAttributes\RouteAttributesServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Evelution87\RouteAttributes\RouteAttributesServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -117,7 +117,7 @@ The package provides several annotations that should be put on controller classe
 ### Adding a GET route
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class MyController
 {
@@ -140,11 +140,11 @@ Route::get('my-route', [MyController::class, 'myMethod']);
 We have left no HTTP verb behind. You can use these attributes on controller methods.
 
 ```php
-#[Spatie\RouteAttributes\Attributes\Post('my-uri')]
-#[Spatie\RouteAttributes\Attributes\Put('my-uri')]
-#[Spatie\RouteAttributes\Attributes\Patch('my-uri')]
-#[Spatie\RouteAttributes\Attributes\Delete('my-uri')]
-#[Spatie\RouteAttributes\Attributes\Options('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Post('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Put('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Patch('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Delete('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Options('my-uri')]
 ```
 
 ### Resource controllers
@@ -164,7 +164,7 @@ You can use `apiResource` boolean parameter to only include actions used in APIs
 Using `Resource` attribute with `Domain`, `Prefix` and `Middleware` attributes works as well.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Attributes\Resource;
 
 #[Prefix('api/v1')]
 #[Resource(
@@ -210,13 +210,13 @@ Route::match(['put', 'patch'], 'api/v1/comments/{comment}', [PhotoCommentControl
 To register a route for all verbs, you can use the `Any` attribute:
 
 ```php
-#[Spatie\RouteAttributes\Attributes\Any('my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Any('my-uri')]
 ```
 
 To register a route for a few verbs at once, you can use the `Route` attribute directly:
 
 ```php
-#[Spatie\RouteAttributes\Attributes\Route(['put', 'patch'], 'my-uri')]
+#[Evelution87\RouteAttributes\Attributes\Route(['put', 'patch'], 'my-uri')]
 ```
 
 ### Specify a route name
@@ -224,7 +224,7 @@ To register a route for a few verbs at once, you can use the `Route` attribute d
 All HTTP verb attributes accept a parameter named `name` that accepts a route name.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class MyController
 {
@@ -246,7 +246,7 @@ Route::get('my-route', [MyController::class, 'myMethod'])->name('my-route-name')
 All HTTP verb attributes accept a parameter named `middleware` that accepts a middleware class or an array of middleware classes.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class MyController
 {
@@ -267,8 +267,8 @@ Route::get('my-route', [MyController::class, 'myMethod'])->middleware(MyMiddlewa
 To apply middleware on all methods of a class you can use the `Middleware` attribute. You can mix this with applying attribute on a method.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Middleware;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Middleware;
 
 #[Middleware(MyMiddleware::class)]
 class MyController
@@ -297,9 +297,9 @@ Route::get('my-other-route', [MyController::class, 'secondMethod'])->middleware(
 You can use the `Prefix` annotation on a class to prefix the routes of all methods of that class.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\Prefix;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Prefix;
 
 #[Prefix('my-prefix')]
 class MyController
@@ -328,9 +328,9 @@ Route::post('my-prefix/my-post-route', [MyController::class, 'myPostMethod']);
 You can use the `Domain` annotation on a class to prefix the routes of all methods of that class.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\Domain;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Domain;
 
 #[Domain('my-subdomain.localhost')]
 class MyController
@@ -369,9 +369,9 @@ return [
 ```
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\DomainFromConfig;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\DomainFromConfig;
 
 #[DomainFromConfig('domains.main')]
 class MyController
@@ -396,8 +396,8 @@ When implicitly binding multiple Eloquent models in a single route definition, y
 By adding the `ScopeBindings` annotation, you can enable this behaviour:
 
 ````php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\ScopeBindings;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\ScopeBindings;
 
 class MyController
 {
@@ -436,10 +436,10 @@ You can use the `Where` annotation on a class or method to constrain the format 
 
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\Where;
-use Spatie\RouteAttributes\Attributes\WhereAlphaNumeric;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Where;
+use Evelution87\RouteAttributes\Attributes\WhereAlphaNumeric;
 
 #[Where('my-where', '[0-9]+')]
 class MyController
@@ -480,9 +480,9 @@ For convenience, some commonly used regular expression patterns have helper attr
 You can use the `Group` annotation on a class to create multiple groups with different domains and prefixes for the routes of all methods of that class.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\Domain;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Domain;
 
 #[Group(domain: 'my-subdomain.localhost', prefix: 'my-prefix')]
 #[Group(domain: 'my-second-subdomain.localhost', prefix: 'my-second-prefix')]
@@ -514,9 +514,9 @@ Route::post('my-post-route', [MyController::class, 'myPostMethod'])->prefix('my-
 You can use the `Defaults` annotation on a class or method to define the default values of your optional route parameters.
 
 ```php
-use Spatie\RouteAttributes\Attributes\Defaults;
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Defaults;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
 
 #[Defaults('param', 'controller-default')]
 class MyController extends Controller
@@ -562,9 +562,9 @@ You can use the `WithTrashed` annotation on a class or method to enable WithTras
 You can explicitly override the behaviour using `WithTrashed(false)` if it is applied at the class level
 
 ```php
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\WithTrashed;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\WithTrashed;
 
 #[WithTrashed]
 class MyController extends Controller

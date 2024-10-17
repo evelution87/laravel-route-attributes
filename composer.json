@@ -1,11 +1,12 @@
 {
-    "name": "spatie/laravel-route-attributes",
+    "name": "evelution87/laravel-route-attributes",
     "description": "Auto register routes using PHP attributes",
     "keywords": [
         "spatie",
+        "evelution87",
         "laravel-route-attributes"
     ],
-    "homepage": "https://github.com/spatie/laravel-route-attributes",
+    "homepage": "https://github.com/evelution87/laravel-route-attributes",
     "license": "MIT",
     "authors": [
         {
@@ -26,13 +27,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\RouteAttributes\\": "src",
-            "Spatie\\RouteAttributes\\Database\\Factories\\": "database/factories"
+            "Evelution87\\RouteAttributes\\": "src",
+            "Evelution87\\RouteAttributes\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\RouteAttributes\\Tests\\": "tests"
+            "Evelution87\\RouteAttributes\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\RouteAttributes\\RouteAttributesServiceProvider"
+                "Evelution87\\RouteAttributes\\RouteAttributesServiceProvider"
             ]
         }
     },

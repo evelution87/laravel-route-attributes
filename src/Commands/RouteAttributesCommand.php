@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteAttributes\Commands;
+namespace Evelution87\RouteAttributes\Commands;
 
 use Illuminate\Console\Command;
 

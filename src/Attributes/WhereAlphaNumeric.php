@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Spatie\RouteAttributes\Attributes;
+namespace Evelution87\RouteAttributes\Attributes;
 
 use Attribute;
 
