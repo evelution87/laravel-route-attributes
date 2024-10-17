@@ -169,7 +169,7 @@ class RouteRegistrar
                             ...$this->priorities[ $httpMethod ] ?? [],
                             $attributeClass->uri => $currentPriority,
                         ];
-
+                        return true;
                     }
 
                     return false;
