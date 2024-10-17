@@ -15,6 +15,7 @@ class Resource implements RouteAttribute
         public array | string | null $names = null,
         public array | string | null $parameters = null,
         public bool | null $shallow = null,
+        int $priority = 0,
     ) {
     }
 }
