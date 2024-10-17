@@ -18,6 +18,7 @@ class Route implements RouteAttribute
         public string $uri,
         public ?string $name = null,
         array | string $middleware = [],
+        int $priority = 0,
     ) {
         $this->methods = array_map(
             static fn (string $verb) => in_array(

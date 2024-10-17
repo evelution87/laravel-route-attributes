@@ -11,6 +11,7 @@ class Delete extends Route
         string $uri,
         ?string $name = null,
         array | string $middleware = [],
+        int $priority = 0,
     ) {
         parent::__construct(
             methods: ['delete'],
