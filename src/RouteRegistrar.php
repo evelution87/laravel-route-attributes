@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\RouteAttributes;
+namespace Evelution87\RouteAttributes;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionClass;
-use Spatie\RouteAttributes\Attributes\Defaults;
-use Spatie\RouteAttributes\Attributes\Fallback;
-use Spatie\RouteAttributes\Attributes\Route;
-use Spatie\RouteAttributes\Attributes\RouteAttribute;
-use Spatie\RouteAttributes\Attributes\ScopeBindings;
-use Spatie\RouteAttributes\Attributes\WhereAttribute;
-use Spatie\RouteAttributes\Attributes\WithTrashed;
+use Evelution87\RouteAttributes\Attributes\Defaults;
+use Evelution87\RouteAttributes\Attributes\Fallback;
+use Evelution87\RouteAttributes\Attributes\Route;
+use Evelution87\RouteAttributes\Attributes\RouteAttribute;
+use Evelution87\RouteAttributes\Attributes\ScopeBindings;
+use Evelution87\RouteAttributes\Attributes\WhereAttribute;
+use Evelution87\RouteAttributes\Attributes\WithTrashed;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
 use Throwable;

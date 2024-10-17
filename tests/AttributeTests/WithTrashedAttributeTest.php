@@ -2,8 +2,8 @@
 
 namespace AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\WithTrashedTestController;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\WithTrashedTestController;
 
 class WithTrashedAttributeTest extends TestCase
 {

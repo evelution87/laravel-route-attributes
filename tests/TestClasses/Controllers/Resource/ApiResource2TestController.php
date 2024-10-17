@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource;
 
 use Illuminate\Http\Request;
-use Spatie\RouteAttributes\Attributes\ApiResource;
+use Evelution87\RouteAttributes\Attributes\ApiResource;
 
 #[ApiResource('posts')]
 class ApiResource2TestController

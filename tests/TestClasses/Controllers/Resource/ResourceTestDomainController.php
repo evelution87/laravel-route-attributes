@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource;
 
-use Spatie\RouteAttributes\Attributes\Domain;
-use Spatie\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Attributes\Domain;
+use Evelution87\RouteAttributes\Attributes\Resource;
 
 #[Domain('my-subdomain.localhost')]
 #[Resource('posts', only: ['index', 'show'])]

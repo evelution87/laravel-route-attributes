@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\RouteAttributes;
+namespace Evelution87\RouteAttributes;
 
 use ReflectionClass;
-use Spatie\RouteAttributes\Attributes\Defaults;
-use Spatie\RouteAttributes\Attributes\Domain;
-use Spatie\RouteAttributes\Attributes\DomainFromConfig;
-use Spatie\RouteAttributes\Attributes\Group;
-use Spatie\RouteAttributes\Attributes\Middleware;
-use Spatie\RouteAttributes\Attributes\Prefix;
-use Spatie\RouteAttributes\Attributes\Resource;
-use Spatie\RouteAttributes\Attributes\RouteAttribute;
-use Spatie\RouteAttributes\Attributes\ScopeBindings;
-use Spatie\RouteAttributes\Attributes\Where;
-use Spatie\RouteAttributes\Attributes\WithTrashed;
+use Evelution87\RouteAttributes\Attributes\Defaults;
+use Evelution87\RouteAttributes\Attributes\Domain;
+use Evelution87\RouteAttributes\Attributes\DomainFromConfig;
+use Evelution87\RouteAttributes\Attributes\Group;
+use Evelution87\RouteAttributes\Attributes\Middleware;
+use Evelution87\RouteAttributes\Attributes\Prefix;
+use Evelution87\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Attributes\RouteAttribute;
+use Evelution87\RouteAttributes\Attributes\ScopeBindings;
+use Evelution87\RouteAttributes\Attributes\Where;
+use Evelution87\RouteAttributes\Attributes\WithTrashed;
 
 class ClassRouteAttributes
 {

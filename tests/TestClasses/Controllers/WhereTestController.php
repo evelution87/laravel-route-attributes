@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
-use Spatie\RouteAttributes\Attributes\Where;
-use Spatie\RouteAttributes\Attributes\WhereAlpha;
-use Spatie\RouteAttributes\Attributes\WhereAlphaNumeric;
-use Spatie\RouteAttributes\Attributes\WhereIn;
-use Spatie\RouteAttributes\Attributes\WhereNumber;
-use Spatie\RouteAttributes\Attributes\WhereUlid;
-use Spatie\RouteAttributes\Attributes\WhereUuid;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Where;
+use Evelution87\RouteAttributes\Attributes\WhereAlpha;
+use Evelution87\RouteAttributes\Attributes\WhereAlphaNumeric;
+use Evelution87\RouteAttributes\Attributes\WhereIn;
+use Evelution87\RouteAttributes\Attributes\WhereNumber;
+use Evelution87\RouteAttributes\Attributes\WhereUlid;
+use Evelution87\RouteAttributes\Attributes\WhereUuid;
 
 #[Where('param', '[0-9]+')]
 class WhereTestController

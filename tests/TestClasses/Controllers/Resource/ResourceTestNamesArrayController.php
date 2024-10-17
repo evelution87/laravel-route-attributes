@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource;
 
-use Spatie\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Attributes\Resource;
 
 #[Resource('posts', only: ['index', 'show'], names: ['index' => 'posts.list', 'show' => 'posts.view'])]
 class ResourceTestNamesArrayController

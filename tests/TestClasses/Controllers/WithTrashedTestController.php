@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\WithTrashed;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\WithTrashed;
 
 #[WithTrashed]
 class WithTrashedTestController

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Domain;
-use Spatie\RouteAttributes\Attributes\Get;
-use Spatie\RouteAttributes\Attributes\Post;
+use Evelution87\RouteAttributes\Attributes\Domain;
+use Evelution87\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Post;
 
 #[Domain('my-subdomain.localhost')]
 class DomainTestController

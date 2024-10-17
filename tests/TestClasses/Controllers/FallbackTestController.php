@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Fallback;
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\Fallback;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 class FallbackTestController
 {

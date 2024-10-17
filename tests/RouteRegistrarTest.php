@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests;
+namespace Evelution87\RouteAttributes\Tests;
 
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\RegistrarTestFirstController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\RegistrarTestSecondController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\SubDirectory\RegistrarTestControllerInSubDirectory;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\RegistrarTestFirstController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\RegistrarTestSecondController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteRegistrar\SubDirectory\RegistrarTestControllerInSubDirectory;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\AnotherTestMiddleware;
 use ThirdParty\Http\Controllers\ThirdPartyController;
 
 class RouteRegistrarTest extends TestCase

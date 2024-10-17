@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers\Resource;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers\Resource;
 
 use Illuminate\Http\Request;
-use Spatie\RouteAttributes\Attributes\Resource;
+use Evelution87\RouteAttributes\Attributes\Resource;
 
 #[Resource('posts', parameters: ['posts' => 'draft'])]
 class ResourceTestParametersController

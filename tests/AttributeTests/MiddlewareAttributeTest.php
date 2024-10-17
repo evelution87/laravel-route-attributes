@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\MiddlewareTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\MiddlewareTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\OtherTestMiddleware;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
 
 class MiddlewareAttributeTest extends TestCase
 {

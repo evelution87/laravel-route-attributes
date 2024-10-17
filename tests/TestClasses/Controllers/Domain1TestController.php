@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\DomainFromConfig;
-use Spatie\RouteAttributes\Attributes\Get;
+use Evelution87\RouteAttributes\Attributes\DomainFromConfig;
+use Evelution87\RouteAttributes\Attributes\Get;
 
 #[DomainFromConfig('domains.test')]
 class Domain1TestController

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\TestClasses\Controllers;
+namespace Evelution87\RouteAttributes\Tests\TestClasses\Controllers;
 
-use Spatie\RouteAttributes\Attributes\Route;
-use Spatie\RouteAttributes\Attributes\ScopeBindings;
+use Evelution87\RouteAttributes\Attributes\Route;
+use Evelution87\RouteAttributes\Attributes\ScopeBindings;
 
 class BindingScoping2TestController
 {

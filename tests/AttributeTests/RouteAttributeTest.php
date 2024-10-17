@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\RouteRegistrar;
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\InvokableRouteGetTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteGetTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteMiddlewareTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteMultiVerbTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteNameTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RoutePostTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
+use Evelution87\RouteAttributes\RouteRegistrar;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\InvokableRouteGetTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteGetTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteMiddlewareTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteMultiVerbTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RouteNameTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\RouteAttribute\RoutePostTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Middleware\TestMiddleware;
 
 class RouteAttributeTest extends TestCase
 {

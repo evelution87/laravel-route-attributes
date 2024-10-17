@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteAttributes\Tests\AttributeTests;
+namespace Evelution87\RouteAttributes\Tests\AttributeTests;
 
-use Spatie\RouteAttributes\Tests\TestCase;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\GetMultipleTestController;
-use Spatie\RouteAttributes\Tests\TestClasses\Controllers\GetTestController;
+use Evelution87\RouteAttributes\Tests\TestCase;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\GetMultipleTestController;
+use Evelution87\RouteAttributes\Tests\TestClasses\Controllers\GetTestController;
 
 class GetAttributeTest extends TestCase
 {
