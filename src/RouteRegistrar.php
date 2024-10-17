@@ -22,6 +22,8 @@ class RouteRegistrar
 {
     private Router $router;
 
+    private array $priorities = [];
+
     protected string $basePath;
 
     protected string $rootNamespace;
@@ -116,19 +118,19 @@ class RouteRegistrar
         $class = new ReflectionClass($className);
 
         $classRouteAttributes = new ClassRouteAttributes($class);
-        
+
         $groups = $classRouteAttributes->groups();
-        
+
         foreach ($groups as $group) {
             $router = $this->router;
             $router->group($group, fn () => $this->registerRoutes($class, $classRouteAttributes));
         }
-        
+
         if ($classRouteAttributes->resource()) {
             $this->registerResource($class, $classRouteAttributes);
         }
 
-       
+
     }
 
     protected function registerResource(ReflectionClass $class, ClassRouteAttributes $classRouteAttributes): void
@@ -142,7 +144,7 @@ class RouteRegistrar
     protected function registerRoutes(ReflectionClass $class, ClassRouteAttributes $classRouteAttributes): void
     {
         foreach ($class->getMethods() as $method) {
-            list($attributes, $wheresAttributes, $defaultAttributes, $fallbackAttributes, $scopeBindingsAttribute, $withTrashedAttribute) = $this->getAttributesForTheMethod($method);
+            [$attributes, $wheresAttributes, $defaultAttributes, $fallbackAttributes, $scopeBindingsAttribute, $withTrashedAttribute] = $this->getAttributesForTheMethod($method);
 
 
             foreach ($attributes as $attribute) {
@@ -157,8 +159,25 @@ class RouteRegistrar
                 }
 
 
-                list($httpMethods, $action) = $this->getHTTPMethodsAndAction($attributeClass, $method, $class);
+                [$httpMethods, $action] = $this->getHTTPMethodsAndAction($attributeClass, $method, $class);
 
+                $currentPriority = $attribute->getArguments()['priority'] ?? 0;
+                $availableHttpMethods = array_filter( $httpMethods, function( $httpMethod ) use ( $attributeClass, $currentPriority ) {
+
+                    if ( $currentPriority > ($this->priorities[ $httpMethod ][ $attributeClass->uri ] ?? -1) ) {
+                        $this->priorities[ $httpMethod ] = [
+                            ...$this->priorities[ $httpMethod ] ?? [],
+                            $attributeClass->uri => $currentPriority,
+                        ];
+
+                    }
+
+                    return false;
+                } );
+
+                if ( empty( $availableHttpMethods ) ) {
+                    continue;
+                }
 
                 $route = $this->router->addRoute($httpMethods, $attributeClass->uri, $action)->name($attributeClass->name);
 
